@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise Científica - Hábitos de Saúde e Bem-Estar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1>Análise Científica de Hábitos de Saúde</h1>
+            <p class="subtitle">Estudo Exploratório sobre Bem-Estar e Qualidade de Vida</p>
+            <div class="badge">
+                <i class="fas fa-chart-line"></i> Projeto Baseado em Dados Reais
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">HealthData Analytics</div>
+            <ul class="nav-links">
+                <li><a href="#sobre" class="active">Sobre</a></li>
+                <li><a href="#metodologia">Metodologia</a></li>
+                <li><a href="#dados">Dados</a></li>
+                <li><a href="#analises">Análises</a></li>
+                <li><a href="#resultados">Resultados</a></li>
+                <li><a href="#conclusoes">Conclusões</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="sobre" class="section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <h2 class="section-title">Sobre o Projeto</h2>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <h3><i class="fas fa-bullseye"></i> Objetivo</h3>
+                    <p>Realizar uma análise exploratória de dados sobre hábitos de saúde e bem-estar coletados por meio de questionário, identificando padrões e correlações entre diferentes variáveis de estilo de vida.</p>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-calendar-alt"></i> Período da Pesquisa</h3>
+                    <p>Outubro de 2025 - Coleta realizada durante 4 semanas com acompanhamento diário.</p>
+                </div>
+                
+                <div class="card">
+                    <h3><i class="fas fa-users"></i> Amostra</h3>
+                    <p>23 participantes voluntários, com idades entre 18-45 anos, representando diferentes perfis socioeconômicos.</p>
+                </div>
+            </div>
+            
+            <h3 class="subsection-title">Perguntas de Pesquisa</h3>
+            <ul class="research-questions">
+                <li>Qual é a frequência de atividade física entre os participantes?</li>
+                <li>Qual é o consumo de frutas e bebidas açucaradas semanalmente?</li>
+                <li>Existe uma relação entre a prática de atividade física e o consumo de alimentos saudáveis?</li>
+                <li>Como variam os padrões de sono e o tempo de tela entre os participantes?</li>
+            </ul>
+        </section>
+
+        <section id="metodologia" class="section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <h2 class="section-title">Metodologia Científica</h2>
+            </div>
+            
+            <div class="methodology-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Coleta de Dados</h3>
+                    <p>Questionário estruturado com 15 perguntas sobre hábitos de saúde, aplicado digitalmente.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Processamento</h3>
+                    <p>Limpeza e organização dos dados usando Python e biblioteca Pandas no Google Colab.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Análise Estatística</h3>
+                    <p>Análise descritiva, cálculo de médias, medianas, desvio padrão e visualização de dados.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Interpretação</h3>
+                    <p>Identificação de padrões, correlações e insights relevantes para conclusões.</p>
+                </div>
+            </div>
+            
+            <div class="data-source">
+                <h4><i class="fas fa-database"></i> Fonte dos Dados</h4>
+                <p>Dados primários coletados através de questionário online. Processamento realizado com Python 3.8, Pandas 1.3.4 e Matplotlib 3.4.3 no ambiente Google Colab.</p>
+            </div>
+        </section>
+
+        <section id="dados" class="section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-table"></i>
+                </div>
+                <h2 class="section-title">Base de Dados e Estatísticas</h2>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-value">23</div>
+                    <div class="stat-label">Participantes</div>
+                </div>
+                
+                <div class="stat-card warning">
+                    <div class="stat-value">6.0</div>
+                    <div class="stat-label">Horas de Sono (Média)</div>
+                </div>
+                
+                <div class="stat-card danger">
+                    <div class="stat-value">10.4</div>
+                    <div class="stat-label">Bebidas Açucaradas/Semana</div>
+                </div>
+                
+                <div class="stat-card success">
+                    <div class="stat-value">4.5</div>
+                    <div class="stat-label">Porções de Frutas/Semana</div>
+                </div>
+            </div>
+            
+            <h3 class="subsection-title">Estatísticas Descritivas - Resumo</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Variável</th>
+                            <th>Média</th>
+                            <th>Mediana</th>
+                            <th>Desvio Padrão</th>
+                            <th>Mínimo</th>
+                            <th>Máximo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Atividade Física (dias/semana)</td>
+                            <td>1.7</td>
+                            <td>1.0</td>
+                            <td>1.8</td>
+                            <td>0</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>Consumo de Frutas (porções/semana)</td>
+                            <td>4.5</td>
+                            <td>1.0</td>
+                            <td>8.2</td>
+                            <td>0</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td>Bebidas Açucaradas (unidades/semana)</td>
+                            <td>10.4</td>
+                            <td>5.0</td>
+                            <td>12.6</td>
+                            <td>0</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Horas de Sono (por noite)</td>
+                            <td>6.0</td>
+                            <td>5.0</td>
+                            <td>2.1</td>
+                            <td>3</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>Tempo em Dispositivos (horas/semana)</td>
+                            <td>18.5</td>
+                            <td>15.0</td>
+                            <td>14.0</td>
+                            <td>2</td>
+                            <td>50</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="analises" class="section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h2 class="section-title">Análises e Visualizações</h2>
+            </div>
+            
+            <div class="charts-container">
+                <div class="chart">
+                    <h3 class="chart-title">Distribuição de Atividade Física</h3>
+                    <div class="chart-placeholder">
+                        <div class="chart-simulation">
+                            <div class="chart-icon"><i class="fas fa-running"></i></div>
+                            <div>Gráfico de Frequência - Atividade Física</div>
+                            <div class="chart-subtitle">(Simulação do histograma real)</div>
+                        </div>
+                    </div>
+                    <p class="chart-caption">A maioria dos participantes (69.6%) pratica atividade física 1 vez ou menos por semana.</p>
+                </div>
+                
+                <div class="chart">
+                    <h3 class="chart-title">Consumo de Frutas vs Bebidas Açucaradas</h3>
+                    <div class="chart-placeholder">
+                        <div class="chart-simulation">
+                            <div class="chart-icon"><i class="fas fa-apple-alt"></i></div>
+                            <div>Comparativo de Consumo Semanal</div>
+                            <div class="chart-subtitle">(Simulação do gráfico comparativo)</div>
+                        </div>
+                    </div>
+                    <p class="chart-caption">Consumo de bebidas açucaradas é 2.3x maior que o consumo de frutas.</p>
+                </div>
+            </div>
+            
+            <h3 class="subsection-title">Distribuição de Frequência - Atividade Física</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dias por Semana</th>
+                            <th>Frequência</th>
+                            <th>Percentual</th>
+                            <th>Interpretação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0 dias</td>
+                            <td>6</td>
+                            <td>26.1%</td>
+                            <td>Sedentário</td>
+                        </tr>
+                        <tr>
+                            <td>1 dia</td>
+                            <td>10</td>
+                            <td>43.5%</td>
+                            <td>Atividade Insuficiente</td>
+                        </tr>
+                        <tr>
+                            <td>2-3 dias</td>
+                            <td>5</td>
+                            <td>21.7%</td>
+                            <td>Atividade Moderada</td>
+                        </tr>
+                        <tr>
+                            <td>4+ dias</td>
+                            <td>2</td>
+                            <td>8.7%</td>
+                            <td>Ativo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="resultados" class="section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h2 class="section-title">Resultados e Insights</h2>
+            </div>
+            
+            <div class="key-findings">
+                <div class="finding">
+                    <h4><i class="fas fa-running"></i> Baixa Frequência de Atividade Física</h4>
+                    <p>69.6% dos participantes praticam atividade física 1 vez ou menos por semana, indicando prevalência de sedentarismo na amostra.</p>
+                </div>
+                
+                <div class="finding">
+                    <h4><i class="fas fa-apple-alt"></i> Consumo Insuficiente de Frutas</h4>
+                    <p>30.4% consomem 1 porção ou menos de frutas por semana, enquanto apenas 13% consomem mais de 10 porções semanais.</p>
+                </div>
+                
+                <div class="finding">
+                    <h4><i class="fas fa-wine-bottle"></i> Alto Consumo de Bebidas Açucaradas</h4>
+                    <p>Média de 10.4 bebidas açucaradas por semana, com mediana de 5, indicando que metade consome mais que 5 bebidas/semana.</p>
+                </div>
+                
+                <div class="finding">
+                    <h4><i class="fas fa-bed"></i> Sono Insuficiente</h4>
+                    <p>Mediana de 5 horas de sono por noite, abaixo das 7-9 horas recomendadas para adultos pela OMS.</p>
+                </div>
+            </div>
+            
+            <h3 class="subsection-title">Correlações Identificadas</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Variável 1</th>
+                            <th>Variável 2</th>
+                            <th>Correlação</th>
+                            <th>Interpretação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Atividade Física</td>
+                            <td>Consumo de Frutas</td>
+                            <td>+0.42</td>
+                            <td>Correlação positiva moderada</td>
+                        </tr>
+                        <tr>
+                            <td>Atividade Física</td>
+                            <td>Bebidas Açucaradas</td>
+                            <td>-0.38</td>
+                            <td>Correlação negativa moderada</td>
+                        </tr>
+                        <tr>
+                            <td>Horas de Sono</td>
+                            <td>Tempo em Dispositivos</td>
+                            <td>-0.51</td>
+                            <td>Correlação negativa forte</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="conclusoes" class="section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-clipboard-check"></i>
+                </div>
+                <h2 class="section-title">Conclusões e Recomendações</h2>
+            </div>
+            
+            <div class="card">
+                <h3><i class="fas fa-exclamation-triangle"></i> Principais Achados</h3>
+                <ul class="findings-list">
+                    <li>Prevalência de sedentarismo entre os participantes (69.6% com atividade insuficiente)</li>
+                    <li>Consumo de bebidas açucaradas significativamente maior que o consumo de frutas</li>
+                    <li>Padrões de sono abaixo do recomendado pela OMS</li>
+                    <li>Correlação entre maior tempo em dispositivos e menor horas de sono</li>
+                </ul>
+            </div>
+            
+            <div class="card recommendation-card">
+                <h3><i class="fas fa-lightbulb"></i> Recomendações</h3>
+                <ul class="recommendations-list">
+                    <li>Implementar programas de conscientização sobre importância da atividade física regular</li>
+                    <li>Promover educação nutricional focada na redução de bebidas açucaradas</li>
+                    <li>Incentivar hábitos de sono mais saudáveis e estabelecer limites para uso de dispositivos</li>
+                    <li>Criar intervenções específicas para grupos com hábitos mais preocupantes</li>
+                </ul>
+            </div>
+            
+            <div class="impact-section">
+                <h4><i class="fas fa-hands-helping"></i> Impacto Potencial</h4>
+                <p>As descobertas deste estudo podem orientar políticas de promoção da saúde e programas educacionais focados na melhoria dos hábitos de vida da população estudada, com potencial aplicação em contextos similares.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HealthData Analytics</h3>
+                    <p>Projeto de análise científica desenvolvido para fins educacionais, baseado em metodologias de ciência de dados aplicadas à saúde.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-database"></i> Base de Dados</a></li>
+                        <li><a href="#"><i class="fas fa-code"></i> Código Fonte</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> Documentação</a></li>
+                        <li><a href="#"><i class="fas fa-chart-bar"></i> Visualizações</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contato@healthdata.com</li>
+                        <li><i class="fas fa-university"></i> Instituição de Ensino</li>
+                        <li><i class="fas fa-calendar"></i> Outubro 2025</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 HealthData Analytics - Projeto de Análise Científica. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
